@@ -2,11 +2,13 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-light bg-light">
+    <nav className="navbar navbar-light" style={{ backgroundColor: "#333" }}>
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           <div className="row">
-            <div className="col">ɿɿɘviЯ</div>
+            <div className="col" style={{ color: "ghostwhite" }}>
+              ɿɿɘviЯ
+            </div>
             <div className="col">
               <div
                 style={{
