@@ -1,0 +1,31 @@
+import React from "react";
+
+const Navbar = () => {
+  return (
+    <nav className="navbar navbar-light bg-light">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="/">
+          <div className="row">
+            <div className="col">ɿɿɘviЯ</div>
+            <div className="col">
+              <div
+                style={{
+                  height: 30,
+                  width: 30,
+                  backgroundColor: "gold",
+                  textAlign: "center",
+                  color: "#333666",
+                  borderRadius: 5,
+                }}
+              >
+                Я
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
