@@ -150,7 +150,7 @@ const MainPage = (props) => {
           style={{ textAlign: "center", marginTop: "6rem", fontSize: "60pt" }}
         >
           <a
-            href="http://www.strawpoll.me/45541914"
+            href="http://www.strawpoll.me/45544782"
             target="_blank"
             rel="noreferrer"
           >
