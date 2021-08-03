@@ -1,4 +1,6 @@
 import React, { createRef, useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import Navbar from "./components/Navbar";
 
@@ -8,6 +10,15 @@ function App() {
   const transToShurb = () => {
     const input = inputRef.current.value;
     setValue(input.split("").reverse().join(""));
+  };
+  const copyToCb = () => {
+    const el = document.createElement("input");
+    el.setAttribute("value", value);
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
+    toast.success("!bɿɒodqilɔ oɈ bɘiqoƆ");
   };
   const transToRorrirb = () => {
     const input = inputRef.current.value;
@@ -86,6 +97,7 @@ function App() {
   };
   return (
     <React.Fragment>
+      <ToastContainer />
       <Navbar />
       <div class="main-body" style={{ padding: 6 }}>
         <div class="row" style={{ padding: 12 }}>
@@ -131,6 +143,14 @@ function App() {
                 placeholder="ereh sraeppa lliw tuptuo ehT"
                 aria-label="ɘɿɘʜ ɿɒɘqqɒ lliw ɈυqɈυo ɘʜT"
               />
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                onClick={copyToCb}
+                style={{ color: "ghostwhite" }}
+              >
+                📋 &#8206; ypoC
+              </button>
             </div>
           </div>
           <div className="col" style={{ color: "ghostwhite" }}>
