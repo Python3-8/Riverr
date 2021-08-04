@@ -22,7 +22,7 @@ const MainPage = (props) => {
     el.select();
     document.execCommand("copy");
     document.body.removeChild(el);
-    toast.success("!bɿɒodqilɔ oɈ bɘiqoƆ");
+    toast.success("Copied to clipboard!");
   };
   const transToRorrirb = () => {
     const input = engInputRef.current.value;
@@ -53,97 +53,97 @@ const MainPage = (props) => {
   };
   return (
     <React.Fragment>
-      <div class="main-body" style={{ padding: 6 }}>
-        <h3 style={{ color: "ghostwhite" }}>ƨɿoɈɒlƨnɒɿT</h3>
-        <div class="row" style={{ padding: 12 }}>
-          <div class="col">
-            <div class="input-group">
+      <div className="main-body" style={{ padding: 6 }}>
+        <h3 style={{ color: "ghostwhite" }}>Translators</h3>
+        <div style={{ padding: 12 }}>
+          <div className="p-3" style={{ color: "ghostwhite" }}>
+            Riverrse your English text here:
+          </div>
+          <div className="p-2">
+            <div className="input-group">
               <input
                 type="text"
                 ref={engInputRef}
-                class="form-control"
-                placeholder="desrrevir eb ot txet hsilgnE eht retnE"
-                aria-label="bɘƨɿɿɘviɿ ɘd oɈ ɈxɘɈ ʜƨilϱnƎ ɘʜɈ ɿɘɈnƎ"
+                className="form-control"
+                placeholder="Enter the English text to be riverrsed"
+                aria-label="Enter the English text to be riverrsed"
               />
               <button
-                class="btn btn-outline-secondary"
+                className="btn btn-outline-secondary"
                 type="button"
                 onClick={transToShurb}
                 style={{ color: "ghostwhite" }}
               >
-                bruhS ot etalsnarT
+                Translate to Shurb
               </button>
               <button
-                class="btn btn-outline-secondary"
+                className="btn btn-outline-secondary"
                 type="button"
                 onClick={transToRorrirb}
                 style={{ color: "ghostwhite" }}
               >
-                dɿiɿɿoЯ oɈ ɘɈɒlƨnɒɿT
+                Translate to Rorrirb
               </button>
             </div>{" "}
           </div>
-          <div class="col" style={{ color: "ghostwhite" }}>
-            :ɘɿɘʜ ɈxɘɈ ʜƨilϱnƎ ɿυoγ ɘƨɿɿɘviЯ
-          </div>
         </div>
-        <div class="row" style={{ padding: 12 }}>
-          <div class="col">
-            <div class="input-group">
+        <div style={{ padding: 12 }}>
+          <div className="p-3" style={{ color: "ghostwhite" }}>
+            Unriverrse your Shurb or Rorrirb text here:
+          </div>
+          <div className="p-2">
+            <div className="input-group">
               <input
                 type="text"
                 ref={langInputRef}
-                class="form-control"
-                placeholder="desrrevirnu eb ot txet brirroR ro bruhS eht retnE"
-                aria-label="bɘƨɿɿɘviɿnυ ɘd oɈ ɈxɘɈ dɿiɿɿoЯ ɿo dɿυʜƧ ɘʜɈ ɿɘɈnƎ"
+                className="form-control"
+                placeholder="Enter the Shurb or Rorrirb text to be unriverrsed"
+                aria-label="Enter the Shurb or Rorrirb text to be unriverrsed"
               />
               <button
-                class="btn btn-outline-secondary"
+                className="btn btn-outline-secondary"
                 type="button"
                 onClick={transFromShurb}
                 style={{ color: "ghostwhite" }}
               >
-                bruhS morf etalsnarT
+                Translate from Shurb
               </button>
               <button
-                class="btn btn-outline-secondary"
+                className="btn btn-outline-secondary"
                 type="button"
                 onClick={transFromRorrirb}
                 style={{ color: "ghostwhite" }}
               >
-                dɿiɿɿoЯ moɿʇ ɘɈɒlƨnɒɿT
+                Translate from Rorrirb
               </button>
             </div>{" "}
           </div>
-          <div class="col" style={{ color: "ghostwhite" }}>
-            :ɘɿɘʜ ɈxɘɈ dɿiɿɿoЯ ɿo dɿυʜƧ ɿυoγ ɘƨɿɿɘviɿnU
-          </div>
         </div>
         <hr style={{ color: "ghostwhite" }} />
-        <h3 style={{ color: "ghostwhite" }}>ɈlυƨɘЯ</h3>
-        <div class="row">
-          <div class="col">
-            <div class="input-group" style={{ padding: 9 }}>
+        <h3 style={{ color: "ghostwhite" }}>Result</h3>
+        <div>
+          <div className="p-3" style={{ color: "ghostwhite" }}>
+            Output:
+          </div>
+          <div className="p-2">
+            <div className="input-group" style={{ padding: 9 }}>
               <textarea
                 type="text"
                 value={value}
                 readOnly
-                class="form-control"
-                placeholder="ereh sraeppa lliw tuptuo ehT"
-                aria-label="ɘɿɘʜ ɿɒɘqqɒ lliw ɈυqɈυo ɘʜT"
+                className="form-control"
+                placeholder="The output will appear here"
+                aria-label="The output will appear here"
               />
               <button
-                class="btn btn-outline-secondary"
+                className="btn btn-outline-secondary"
                 type="button"
                 onClick={copyToCb}
                 style={{ color: "ghostwhite" }}
               >
-                📋 &#8206; ypoC
+                Copy 📋
               </button>
             </div>
-          </div>
-          <div className="col" style={{ color: "ghostwhite" }}>
-            :ɈυqɈυO
           </div>
         </div>
         <div
@@ -154,7 +154,7 @@ const MainPage = (props) => {
             target="_blank"
             rel="noreferrer"
           >
-            !ɘm ɘɈɒЯ
+            Rate me!
           </a>
         </div>
       </div>

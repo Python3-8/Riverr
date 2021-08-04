@@ -5,9 +5,9 @@ const Navbar = () => {
     <nav className="navbar navbar-light" style={{ backgroundColor: "#333" }}>
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          <div className="row">
+          <div className="row g-2">
             <div className="col" style={{ color: "ghostwhite" }}>
-              ɿɿɘviЯ
+              ɿ ɿ ɘ v i
             </div>
             <div className="col">
               <div
